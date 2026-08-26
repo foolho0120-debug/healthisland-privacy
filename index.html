@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>健康島 隱私權政策</title>
+    <meta name="description" content="健康島 App 的隱私權政策:資料全部留在你的裝置上,不會上傳到任何伺服器。" />
+    <meta name="robots" content="index, follow" />
+    <style>
+      /* 淺色是預設值,深色只覆寫 token —— 兩種底都要讀得清楚。 */
+      :root {
+        color-scheme: light dark;
+        --bg: #eaf6fc;
+        --surface: #ffffff;
+        --ink: #0e2a3b;
+        --ink-body: #35505f;
+        --rule: #d3e4ee;
+        --link: #1f6f96;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1a22;
+          --surface: #14252f;
+          --ink: #eaf6fc;
+          --ink-body: #c2d6e1;
+          --rule: #27414f;
+          --link: #7cc4e8;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 2rem 1.25rem 4rem;
+        background: var(--bg);
+        color: var(--ink-body);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+          "PingFang TC", "Microsoft JhengHei", sans-serif;
+        font-size: 17px;
+        line-height: 1.85;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        background: var(--surface);
+        border-radius: 16px;
+        padding: 2rem 1.75rem;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.6rem;
+        line-height: 1.35;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      .updated {
+        margin: 0 0 1.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--rule);
+        font-size: 0.9rem;
+        opacity: 0.85;
+      }
+      p { margin: 0 0 1.15rem; }
+      p:last-of-type { margin-bottom: 0; }
+      a { color: var(--link); }
+      a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 3px; }
+      @media (max-width: 30rem) {
+        body { padding: 1rem 0.75rem 3rem; }
+        main { padding: 1.5rem 1.25rem; border-radius: 12px; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>健康島 隱私權政策</h1>
+      <p class="updated">最後更新:2026-08-26</p>
+      <p>健康島不會收集、傳輸或分享你的任何個人資料。</p>
+      <p>你在 App 內記錄的所有內容(斷食、喝水、飲食、運動、提醒與遊戲進度)都只儲存在你的裝置上,不會上傳到任何伺服器。我們沒有伺服器,也沒有使用任何分析或廣告 SDK。</p>
+      <p>解除安裝 App 會一併刪除這些資料,且無法復原。你可以隨時在「紀錄」頁把全部健康紀錄匯出成 CSV 自行保存。若你使用 iCloud 備份,資料會依你的 iCloud 設定被納入備份。</p>
+      <p>通知權限僅用於在你的裝置上顯示你自己設定的提醒。</p>
+      <p>有任何問題請聯絡:<a href="mailto:maplefoolho%2Bhealthisland@gmail.com">maplefoolho+healthisland@gmail.com</a></p>
+    </main>
+  </body>
+</html>
