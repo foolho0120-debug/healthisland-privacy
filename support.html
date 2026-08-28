@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>健康島 支援</title>
+    <meta name="description" content="健康島 App 的支援說明與聯絡方式。" />
+    <style>
+      /* 淺色是預設值,深色只覆寫 token —— 兩種底都要讀得清楚。 */
+      :root {
+        color-scheme: light dark;
+        --bg: #eaf6fc;
+        --surface: #ffffff;
+        --ink: #0e2a3b;
+        --ink-body: #35505f;
+        --rule: #d3e4ee;
+        --link: #1f6f96;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0d1a22;
+          --surface: #14252f;
+          --ink: #eaf6fc;
+          --ink-body: #c2d6e1;
+          --rule: #27414f;
+          --link: #7cc4e8;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 2rem 1.25rem 4rem;
+        background: var(--bg);
+        color: var(--ink-body);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC",
+          "PingFang TC", "Microsoft JhengHei", sans-serif;
+        font-size: 17px;
+        line-height: 1.85;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        max-width: 40rem;
+        margin: 0 auto;
+        background: var(--surface);
+        border-radius: 16px;
+        padding: 2rem 1.75rem;
+      }
+      h1 {
+        margin: 0 0 0.35rem;
+        font-size: 1.6rem;
+        line-height: 1.35;
+        color: var(--ink);
+        text-wrap: balance;
+      }
+      .updated {
+        margin: 0 0 1.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--rule);
+        font-size: 0.9rem;
+        opacity: 0.85;
+      }
+      p { margin: 0 0 1.15rem; }
+      p:last-of-type { margin-bottom: 0; }
+      a { color: var(--link); }
+      a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 3px; }
+      @media (max-width: 30rem) {
+        body { padding: 1rem 0.75rem 3rem; }
+        main { padding: 1.5rem 1.25rem; border-radius: 12px; }
+      }
+      h2 { font-size: 1.05rem; color: var(--ink); margin: 1.75rem 0 0.4rem; line-height: 1.5; }
+      h2:first-of-type { margin-top: 1.25rem; }
+      .contact { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>健康島 支援</h1>
+      <p class="updated">最後更新:2026-08-26</p>
+      <h2>我的紀錄會不會不見?</h2>
+      <p>所有紀錄都存在你手機裡的資料庫,不會上傳到任何地方。刪除 App 會一併刪掉,而且無法復原 —— 想留一份的話,到「紀錄」頁把全部健康紀錄匯出成 CSV(Excel、Numbers、Google 試算表都打得開)。</p>
+      <h2>換手機的話紀錄帶得走嗎?</h2>
+      <p>如果你有開 iCloud 備份,App 的資料會依你的 iCloud 設定被納入備份,還原新手機時會一起回來。想更保險的話請先匯出 CSV 自行保存。</p>
+      <h2>熱量準不準?</h2>
+      <p>一律是<strong>估算值</strong>。食物與飲料的數字來自業者標示或第三方整理,選品項時會標明來源;運動消耗用 MET 值乘上你在設定裡填的體重(沒填就用 62 公斤)。僅供習慣養成參考,不構成醫療建議 —— 有健康疑慮請諮詢專業醫療人員。</p>
+      <h2>提醒沒有響?</h2>
+      <p>請到 iOS 的「設定 → 健康島 → 通知」確認通知權限是開啟的。另外 iOS 一次最多保留 64 則待發通知,所以自訂提醒有數量上限,超過時 App 會擋下來並說明原因。</p>
+      <h2>斷食忘記按結束怎麼辦?</h2>
+      <p>超過目標兩小時之後,斷食頁會出現一條橫幅,可以一鍵補記為當時達標的時間 —— 那一天仍然會被算成達標。</p>
+      <h2>記錯了可以改嗎?</h2>
+      <p>可以。今天的紀錄在各工具頁直接刪除;過去的日子到「紀錄」頁點那一列,可以補記或刪除。補記只會修正紀錄本身,不會補發貝殼或還原連續天數。</p>
+      <div class="contact">
+        <h2>還是沒解決?</h2>
+        <p>寄信給我:<a href="mailto:maplefoolho%2Bhealthisland@gmail.com">maplefoolho+healthisland@gmail.com</a></p>
+        <p><a href="./">隱私權政策</a></p>
+      </div>
+    </main>
+  </body>
+</html>
